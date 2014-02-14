@@ -9,8 +9,6 @@ describe Netaxept::RegisterRequest do
 
   describe 'attributes' do
     it 'responds to required attributes' do
-      subject.must_respond_to :merchantId
-      subject.must_respond_to :token
       subject.must_respond_to :orderNumber
       subject.must_respond_to :orderDescription
       subject.must_respond_to :serviceType
@@ -33,6 +31,21 @@ describe Netaxept::RegisterRequest do
     end
   end
 
+  describe '.merge' do
+    it 'merges successfully' do
+      expected = [:foo]
+      (subject.merge(foo: 'bar').keys & expected).must_equal expected
+    end
+
+    it 'merges with wrong type' do
+      expected = subject.attributes.keys
+      subject.merge('wrong').keys.must_equal expected
+      subject.merge(nil).keys.must_equal expected
+      subject.merge('').keys.must_equal expected
+      subject.merge.keys.must_equal expected
+    end
+  end
+
   describe 'defaults and values' do
     it 'provides default values' do
       subject.orderNumber.must_equal 1
@@ -40,18 +53,12 @@ describe Netaxept::RegisterRequest do
     end
 
     it 'pulls in environment vars' do
-      ENV["NETAXEPT_MERCHANT_ID"]   ||= 'my_id'
-      ENV["NETAXEPT_PASSWORD"]      ||= 'my_password'
       ENV["NETAXEPT_REDIRECT_URL"]  ||= "http://localhost:3000/complete_order"
-      subject.merchantId.wont_be_nil
-      subject.token.wont_be_nil
       subject.redirectUrl.wont_be_nil
     end
 
-    it 'fails if environment vars are not provided'
-
     it 'formats attributes' do
-      expected = [:orderNumber, :amount]
+      expected = [:orderNumber, :amount, :terminalVat]
       (subject.attributes.keys & expected).must_equal expected
     end
   end
