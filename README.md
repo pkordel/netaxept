@@ -1,6 +1,7 @@
 # Netaxept
 
-TODO: Write a gem description
+This gem provides support for the Norwegian payment provider NetAxept.
+See http://www.netaxept.no for more information.
 
 ## Installation
 
