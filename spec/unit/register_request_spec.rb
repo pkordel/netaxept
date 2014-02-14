@@ -48,6 +48,8 @@ describe Netaxept::RegisterRequest do
       subject.redirectUrl.wont_be_nil
     end
 
+    it 'fails if environment vars are not provided'
+
     it 'formats attributes' do
       expected = [:orderNumber, :amount]
       (subject.attributes.keys & expected).must_equal expected

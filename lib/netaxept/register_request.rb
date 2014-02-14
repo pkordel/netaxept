@@ -12,9 +12,9 @@ module Netaxept
                                       :recurringExpiryDate,     :panHash )
 
     def initialize(order)
-      send "merchantId=",     ENV["NETAXEPT_MERCHANT_ID"]
-      send "token=",          ENV["NETAXEPT_PASSWORD"]
-      send "redirectUrl=",    ENV["NETAXEPT_REDIRECT_URL"]
+      send "merchantId=",     ENV.fetch("NETAXEPT_MERCHANT_ID")
+      send "token=",          ENV.fetch("NETAXEPT_PASSWORD")
+      send "redirectUrl=",    ENV.fetch("NETAXEPT_REDIRECT_URL")
       send "orderNumber=",    order.id
       send "amount=",         order.total
       send "terminalVat=",    order.vat
@@ -22,7 +22,6 @@ module Netaxept
 
     def attributes
       attributes = self.to_h.dup
-      # attributes.delete_if { |_k, v| v.blank? }
       attributes.delete_if { |_k, v| v.nil? }
     end
   end
