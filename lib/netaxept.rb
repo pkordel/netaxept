@@ -1,5 +1,7 @@
-require "netaxept/version"
+# coding: utf-8
+require 'netaxept/version'
+require 'dotenv'
 
 module Netaxept
-  # Your code goes here...
+  Dotenv.load
 end
