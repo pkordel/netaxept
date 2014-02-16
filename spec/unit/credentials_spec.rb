@@ -1,5 +1,4 @@
 require 'unit_spec_helper'
-require 'netaxept/credentials'
 
 describe Netaxept::Credentials do
   subject { Netaxept::Credentials.new }

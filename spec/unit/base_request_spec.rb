@@ -1,5 +1,4 @@
 require 'unit_spec_helper'
-require 'netaxept/base_request'
 
 describe Netaxept::BaseRequest do
 

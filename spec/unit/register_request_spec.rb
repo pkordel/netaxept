@@ -1,5 +1,4 @@
 require 'unit_spec_helper'
-require 'netaxept/register_request'
 
 describe Netaxept::RegisterRequest do
 
