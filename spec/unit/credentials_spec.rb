@@ -1,7 +1,7 @@
 require 'unit_spec_helper'
 
 describe Netaxept::Credentials do
-  subject { Netaxept::Credentials.new }
+  subject { Netaxept::Credentials.new(merchantId: '12345678', token: 'secret') }
 
   it 'acts as a hash' do
     subject.keys.must_equal [:merchantId, :token]
