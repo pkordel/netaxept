@@ -1,5 +1,7 @@
 # Netaxept
 
+[![Code Climate](https://codeclimate.com/github/pkordel/netaxept.png)](https://codeclimate.com/github/pkordel/netaxept)
+
 This gem provides support for the Norwegian payment provider NetAxept.
 See http://www.netaxept.no for more information.
 
