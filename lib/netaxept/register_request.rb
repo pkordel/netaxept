@@ -1,8 +1,5 @@
-require 'forwardable'
-
 module Netaxept
   class RegisterRequest < BaseRequest
-  extend Forwardable
 
   VALID_KEYS = [:orderNumber,
                 :orderDescription,
