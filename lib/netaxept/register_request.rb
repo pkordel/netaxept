@@ -1,43 +1,45 @@
+require 'forwardable'
+
 module Netaxept
-  class RegisterRequest < Struct.new( :orderNumber,
-                                      :orderDescription,
-                                      :serviceType,
-                                      :description,
-                                      :currencyCode,
-                                      :amount,
-                                      :terminalVat,
-                                      :force3DSecure,
-                                      :updateStoredPaymentInfo,
-                                      :redirectUrl,
-                                      :language,
-                                      :customerNumber,
-                                      :customerEmail,
-                                      :customerPhoneNumber,
-                                      :customerFirstName,
-                                      :customerLastName,
-                                      :recurringType,
-                                      :recurringFrequency,
-                                      :recurringExpiryDate,
-                                      :panHash )
+  class RegisterRequest
+  extend Forwardable
 
-    def initialize(order)
-      send "redirectUrl=",    ENV.fetch("NETAXEPT_REDIRECT_URL")
-      send "orderNumber=",    order.id
-      send "amount=",         order.total
-      send "terminalVat=",    order.vat
+  VALID_KEYS = [:orderNumber,
+                :orderDescription,
+                :serviceType,
+                :description,
+                :currencyCode,
+                :amount,
+                :terminalVat,
+                :force3DSecure,
+                :updateStoredPaymentInfo,
+                :redirectUrl,
+                :language,
+                :customerNumber,
+                :customerEmail,
+                :customerPhoneNumber,
+                :customerFirstName,
+                :customerLastName,
+                :recurringType,
+                :recurringFrequency,
+                :recurringExpiryDate,
+                :panHash]
+
+    def_delegators :@params, :merge, :[], :keys
+
+    def initialize(order, params = {})
+      @params                     = params
+      @params[:redirectUrl]       = ENV.fetch("NETAXEPT_REDIRECT_URL")
+      @params[:orderNumber]       = order.id
+      @params[:amount]            = order.total
+      @params[:terminalVat]       = order.vat
+      @params[:orderDescription]  = order.description
+      @params[:currencyCode]      = 'NOK'
+      @params[:recurringType]     = 'S'
     end
 
-    def attributes
-      attributes = self.to_h.dup
-      attributes.delete_if { |_k, v| v.nil? }
-    end
-
-    def merge(other_hash = {})
-      if other_hash.respond_to? :to_h
-        attributes.merge(other_hash.to_h)
-      else
-        attributes
-      end
+    def params
+      @params.delete_if { |_k, _v| _v.nil? }
     end
   end
 end
