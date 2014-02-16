@@ -23,13 +23,13 @@ module Netaxept
                 :panHash]
 
     def initialize(order, params = {})
-      params = Netaxept::Credentials.new.params.merge(params)
+      params = Netaxept::Credentials.new(params).params
       @params                     = super(params)
-      @params[:redirectUrl]       = ENV.fetch("NETAXEPT_REDIRECT_URL")
-      @params[:orderNumber]       = order.id
-      @params[:amount]            = order.total
-      @params[:terminalVat]       = order.vat
-      @params[:orderDescription]  = order.description
+      @params[:redirectUrl]       ||= ENV.fetch("NETAXEPT_REDIRECT_URL")
+      @params[:orderNumber]       ||= order.id
+      @params[:amount]            ||= order.total
+      @params[:terminalVat]       ||= order.vat
+      @params[:orderDescription]  ||= order.description
       @params[:currencyCode]      = 'NOK'
       @params[:recurringType]     = 'S'
     end
