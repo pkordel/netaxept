@@ -2,7 +2,7 @@ require 'bundler/gem_tasks'
 require 'dotenv/tasks'
 require 'rake/testtask'
 
-namespace 'test' do |ns|
+namespace :test do |ns|
   test_files             = FileList['spec/**/*_spec.rb']
   integration_test_files = FileList['spec/**/*_integration_spec.rb']
   unit_test_files        = test_files - integration_test_files

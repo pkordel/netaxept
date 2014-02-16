@@ -1,12 +1,10 @@
 # coding: utf-8
 require 'unit_spec_helper'
-require 'netaxept'
 require 'faraday'
-require 'debugger'
 require 'vcr_setup'
 
-def parse_response response
-  Netaxept::RegisterResponse.new response.body
+def parse_response(response, response_class = Netaxept::RegisterResponse)
+  response_class.new response.body
 end
 
 def establish_connection

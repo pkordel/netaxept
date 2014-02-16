@@ -18,6 +18,7 @@ describe Netaxept::RegisterRequest do
     it 'provides default values' do
       subject[:orderNumber].must_equal 1
       subject[:amount].must_equal 100
+      subject[:currencyCode].must_equal 'NOK'
     end
 
     it 'pulls in environment vars' do

@@ -6,8 +6,8 @@ describe 'Register payment' do
 
   describe 'a valid request' do
     it 'is successful' do
-      VCR.use_cassette('register_request_success') do
-        request = Netaxept::RegisterRequest.new(order, Netaxept::Credentials.new.params)
+      VCR.use_cassette('register_request_success', record: :new_episodes) do
+        request = Netaxept::RegisterRequest.new(order)
         response = parse_response connection.get('/Netaxept/Register.aspx', request.params)
         response.error.must_be_nil
         response.transaction_id.wont_be_nil
@@ -17,8 +17,9 @@ describe 'Register payment' do
 
   describe 'when missing credentials' do
     it 'returns error' do
-      VCR.use_cassette('register_request_missing_credentials') do
+      VCR.use_cassette('register_request_missing_credentials', record: :new_episodes) do
         request = Netaxept::RegisterRequest.new(order)
+        request.params.delete(:merchantId)
         response = parse_response connection.get('/Netaxept/Register.aspx', request.params)
         error = response.error
         error.must_be_instance_of Netaxept::AuthenticationException
@@ -29,8 +30,8 @@ describe 'Register payment' do
 
   describe 'when missing order number' do
     it 'returns error' do
-      VCR.use_cassette('register_request_missing_order_number') do
-        request = Netaxept::RegisterRequest.new(order, Netaxept::Credentials.new.params)
+      VCR.use_cassette('register_request_missing_order_number', record: :new_episodes) do
+        request = Netaxept::RegisterRequest.new(order)
         request.params.delete(:orderNumber)
         response = parse_response connection.get('/Netaxept/Register.aspx', request.params)
         error = response.error
@@ -42,8 +43,8 @@ describe 'Register payment' do
 
   describe 'when missing order amount' do
     it 'returns error' do
-      VCR.use_cassette('register_request_missing_order_amount') do
-        request = Netaxept::RegisterRequest.new(order, Netaxept::Credentials.new.params)
+      VCR.use_cassette('register_request_missing_order_amount', record: :new_episodes) do
+        request = Netaxept::RegisterRequest.new(order)
         request.params.delete(:amount)
         response = parse_response connection.get('/Netaxept/Register.aspx', request.params)
         error = response.error
@@ -55,8 +56,8 @@ describe 'Register payment' do
 
   describe 'when missing currency code' do
     it 'returns error' do
-      VCR.use_cassette('register_request_missing_currency_code') do
-        request = Netaxept::RegisterRequest.new(order, Netaxept::Credentials.new.params)
+      VCR.use_cassette('register_request_missing_currency_code', record: :new_episodes) do
+        request = Netaxept::RegisterRequest.new(order)
         request.params.delete(:currencyCode)
         response = parse_response connection.get('/Netaxept/Register.aspx', request.params)
         error = response.error

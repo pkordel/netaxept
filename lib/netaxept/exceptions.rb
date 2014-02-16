@@ -6,4 +6,5 @@ module Netaxept
   class GenericException < Exception; end
   class ValidationException < Exception; end
   class SecurityException < Exception; end
+  class QueryException < Exception; end
 end

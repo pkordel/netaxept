@@ -1,7 +1,7 @@
 require 'forwardable'
 
 module Netaxept
-  class RegisterRequest
+  class RegisterRequest < BaseRequest
   extend Forwardable
 
   VALID_KEYS = [:orderNumber,
@@ -25,10 +25,9 @@ module Netaxept
                 :recurringExpiryDate,
                 :panHash]
 
-    def_delegators :@params, :merge, :[], :keys
-
     def initialize(order, params = {})
-      @params                     = params
+      params = Netaxept::Credentials.new.params.merge(params)
+      @params                     = super(params)
       @params[:redirectUrl]       = ENV.fetch("NETAXEPT_REDIRECT_URL")
       @params[:orderNumber]       = order.id
       @params[:amount]            = order.total
