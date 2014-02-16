@@ -1,0 +1,243 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Register.aspx?amount=100&currencyCode=NOK&force3DSecure=true&merchantId=12001113&orderDescription=DESCRIPTION&orderNumber=1&recurringType=S&redirectUrl=http://localhost:3000/complete_order&terminalVat=20&token=M!s8/b3Y
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 17:06:46 GMT
+      Content-Length:
+      - '288'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RegisterResponse xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <TransactionId>826adc5f8d3141d0aa7b8557f0efb3f9</TransactionId>\r\n</RegisterResponse>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 17:06:46 GMT
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Register.aspx?amount=100&currencyCode=NOK&merchantId=12001113&orderDescription=DESCRIPTION&orderNumber=1&recurringType=S&redirectUrl=http://localhost:3000/complete_order&terminalVat=20&token=M!s8/b3Y
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 17:08:13 GMT
+      Content-Length:
+      - '288'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RegisterResponse xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <TransactionId>b50786b3323c4f4198dfb6c2e84b8a75</TransactionId>\r\n</RegisterResponse>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 17:08:14 GMT
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Register.aspx?amount=100&currencyCode=NOK&customerEmail=customer@example.com&merchantId=12001113&orderDescription=DESCRIPTION&orderNumber=1&recurringType=S&redirectUrl=http://localhost:3000/complete_order&terminalVat=20&token=M!s8/b3Y
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 17:40:54 GMT
+      Content-Length:
+      - '288'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RegisterResponse xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <TransactionId>02c430ffeb0044f7b36df8f5c95113ac</TransactionId>\r\n</RegisterResponse>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 17:40:55 GMT
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Register.aspx?amount=100&currencyCode=NOK&customerEmail=customer@example.com&customerPhoneNumber=12345678&merchantId=12001113&orderDescription=DESCRIPTION&orderNumber=1&recurringType=S&redirectUrl=http://localhost:3000/complete_order&terminalVat=20&token=M!s8/b3Y
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 17:54:15 GMT
+      Content-Length:
+      - '290'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RegisterResponse xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <TransactionId>2e5419ff9f66400586693f1276d37be7</TransactionId>\r\n</RegisterResponse>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 17:54:16 GMT
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Register.aspx?amount=100&currencyCode=NOK&customerEmail=customer@example.com&customerNumber=1&customerPhoneNumber=12345678&merchantId=12001113&orderDescription=DESCRIPTION&orderNumber=1&recurringType=S&redirectUrl=http://localhost:3000/complete_order&terminalVat=20&token=M!s8/b3Y
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 17:56:38 GMT
+      Content-Length:
+      - '289'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RegisterResponse xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <TransactionId>175804d619564ca7b2a1b65c2b1a68c6</TransactionId>\r\n</RegisterResponse>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 17:56:38 GMT
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Register.aspx?amount=100&currencyCode=NOK&customerEmail=customer@example.com&customerFirstName=Peter&customerLastName=Pan&customerNumber=1&customerPhoneNumber=12345678&merchantId=12001113&orderDescription=DESCRIPTION&orderNumber=1&recurringType=S&redirectUrl=http://localhost:3000/complete_order&terminalVat=20&token=M!s8/b3Y
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 18:02:48 GMT
+      Content-Length:
+      - '289'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RegisterResponse xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <TransactionId>0d54952d1b5847b9b7afd6858129981f</TransactionId>\r\n</RegisterResponse>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 18:02:48 GMT
+recorded_with: VCR 2.8.0

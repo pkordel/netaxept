@@ -18,4 +18,3 @@ tmp
 .ruby-gemset
 .ruby-version
 .env
-spec/cassettes

@@ -1,0 +1,367 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Query.aspx?merchantId=12001113&token=M!s8/b3Y&transactionId=826adc5f8d3141d0aa7b8557f0efb3f9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 17:06:50 GMT
+      Content-Length:
+      - '936'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<PaymentInfo xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <MerchantId>12001113</MerchantId>\r\n
+        \ <QueryFinished>2014-02-16T18:06:50.6492162+01:00</QueryFinished>\r\n  <TransactionId>826adc5f8d3141d0aa7b8557f0efb3f9</TransactionId>\r\n
+        \ <OrderInformation>\r\n    <Amount>100</Amount>\r\n    <Currency>NOK</Currency>\r\n
+        \   <OrderNumber>1</OrderNumber>\r\n    <OrderDescription>DESCRIPTION</OrderDescription>\r\n
+        \   <Fee>0</Fee>\r\n    <RoundingAmount>0</RoundingAmount>\r\n    <Total>100</Total>\r\n
+        \   <Timestamp>2014-02-16T18:06:46.697</Timestamp>\r\n  </OrderInformation>\r\n
+        \ <TerminalInformation>\r\n    <Browser />\r\n  </TerminalInformation>\r\n
+        \ <CustomerInformation>\r\n    <Email />\r\n    <PhoneNumber />\r\n    <CustomerNumber
+        />\r\n    <FirstName />\r\n    <LastName />\r\n    <Address1 />\r\n    <Address2
+        />\r\n    <Postcode />\r\n    <Town />\r\n    <Country />\r\n    <SocialSecurityNumber
+        />\r\n    <CompanyName />\r\n    <CompanyRegistrationNumber />\r\n  </CustomerInformation>\r\n
+        \ <Summary>\r\n    <AmountCaptured>0</AmountCaptured>\r\n    <AmountCredited>0</AmountCredited>\r\n
+        \   <Annulled>false</Annulled>\r\n    <Annuled>false</Annuled>\r\n    <Authorized>false</Authorized>\r\n
+        \ </Summary>\r\n  <CardInformation>\r\n    <MaskedPAN />\r\n    <PanHash />\r\n
+        \ </CardInformation>\r\n  <History>\r\n    <TransactionLogLine>\r\n      <DateTime>2014-02-16T18:06:46.697</DateTime>\r\n
+        \     <Description />\r\n      <Operation>Register</Operation>\r\n      <TransactionReconRef
+        />\r\n    </TransactionLogLine>\r\n  </History>\r\n  <ErrorLog />\r\n  <AuthenticationInformation
+        />\r\n  <AvtaleGiroInformation />\r\n  <Recurring>\r\n    <PanHash />\r\n
+        \   <ExpiryDate />\r\n    <Frequency />\r\n    <Type>Store (Init)</Type>\r\n
+        \ </Recurring>\r\n  <SecurityInformation>\r\n    <IPCountryMatchesIssuingCountry>true</IPCountryMatchesIssuingCountry>\r\n
+        \ </SecurityInformation>\r\n</PaymentInfo>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 17:06:51 GMT
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Query.aspx?merchantId=12001113&token=M!s8/b3Y&transactionId=b50786b3323c4f4198dfb6c2e84b8a75
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 17:40:22 GMT
+      Content-Length:
+      - '937'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<PaymentInfo xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <MerchantId>12001113</MerchantId>\r\n
+        \ <QueryFinished>2014-02-16T18:40:22.3271434+01:00</QueryFinished>\r\n  <TransactionId>b50786b3323c4f4198dfb6c2e84b8a75</TransactionId>\r\n
+        \ <OrderInformation>\r\n    <Amount>100</Amount>\r\n    <Currency>NOK</Currency>\r\n
+        \   <OrderNumber>1</OrderNumber>\r\n    <OrderDescription>DESCRIPTION</OrderDescription>\r\n
+        \   <Fee>0</Fee>\r\n    <RoundingAmount>0</RoundingAmount>\r\n    <Total>100</Total>\r\n
+        \   <Timestamp>2014-02-16T18:08:13.88</Timestamp>\r\n  </OrderInformation>\r\n
+        \ <TerminalInformation>\r\n    <Browser />\r\n  </TerminalInformation>\r\n
+        \ <CustomerInformation>\r\n    <Email />\r\n    <PhoneNumber />\r\n    <CustomerNumber
+        />\r\n    <FirstName />\r\n    <LastName />\r\n    <Address1 />\r\n    <Address2
+        />\r\n    <Postcode />\r\n    <Town />\r\n    <Country />\r\n    <SocialSecurityNumber
+        />\r\n    <CompanyName />\r\n    <CompanyRegistrationNumber />\r\n  </CustomerInformation>\r\n
+        \ <Summary>\r\n    <AmountCaptured>0</AmountCaptured>\r\n    <AmountCredited>0</AmountCredited>\r\n
+        \   <Annulled>false</Annulled>\r\n    <Annuled>false</Annuled>\r\n    <Authorized>false</Authorized>\r\n
+        \ </Summary>\r\n  <CardInformation>\r\n    <MaskedPAN />\r\n    <PanHash />\r\n
+        \ </CardInformation>\r\n  <History>\r\n    <TransactionLogLine>\r\n      <DateTime>2014-02-16T18:08:13.88</DateTime>\r\n
+        \     <Description />\r\n      <Operation>Register</Operation>\r\n      <TransactionReconRef
+        />\r\n    </TransactionLogLine>\r\n  </History>\r\n  <ErrorLog />\r\n  <AuthenticationInformation
+        />\r\n  <AvtaleGiroInformation />\r\n  <Recurring>\r\n    <PanHash />\r\n
+        \   <ExpiryDate />\r\n    <Frequency />\r\n    <Type>Store (Init)</Type>\r\n
+        \ </Recurring>\r\n  <SecurityInformation>\r\n    <IPCountryMatchesIssuingCountry>true</IPCountryMatchesIssuingCountry>\r\n
+        \ </SecurityInformation>\r\n</PaymentInfo>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 17:40:22 GMT
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Query.aspx?merchantId=12001113&token=M!s8/b3Y&transactionId=02c430ffeb0044f7b36df8f5c95113ac
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 17:40:57 GMT
+      Content-Length:
+      - '951'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<PaymentInfo xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <MerchantId>12001113</MerchantId>\r\n
+        \ <QueryFinished>2014-02-16T18:40:56.9202292+01:00</QueryFinished>\r\n  <TransactionId>02c430ffeb0044f7b36df8f5c95113ac</TransactionId>\r\n
+        \ <OrderInformation>\r\n    <Amount>100</Amount>\r\n    <Currency>NOK</Currency>\r\n
+        \   <OrderNumber>1</OrderNumber>\r\n    <OrderDescription>DESCRIPTION</OrderDescription>\r\n
+        \   <Fee>0</Fee>\r\n    <RoundingAmount>0</RoundingAmount>\r\n    <Total>100</Total>\r\n
+        \   <Timestamp>2014-02-16T18:40:54.937</Timestamp>\r\n  </OrderInformation>\r\n
+        \ <TerminalInformation>\r\n    <Browser />\r\n  </TerminalInformation>\r\n
+        \ <CustomerInformation>\r\n    <Email>customer@example.com</Email>\r\n    <PhoneNumber
+        />\r\n    <CustomerNumber />\r\n    <FirstName />\r\n    <LastName />\r\n
+        \   <Address1 />\r\n    <Address2 />\r\n    <Postcode />\r\n    <Town />\r\n
+        \   <Country />\r\n    <SocialSecurityNumber />\r\n    <CompanyName />\r\n
+        \   <CompanyRegistrationNumber />\r\n  </CustomerInformation>\r\n  <Summary>\r\n
+        \   <AmountCaptured>0</AmountCaptured>\r\n    <AmountCredited>0</AmountCredited>\r\n
+        \   <Annulled>false</Annulled>\r\n    <Annuled>false</Annuled>\r\n    <Authorized>false</Authorized>\r\n
+        \ </Summary>\r\n  <CardInformation>\r\n    <MaskedPAN />\r\n    <PanHash />\r\n
+        \ </CardInformation>\r\n  <History>\r\n    <TransactionLogLine>\r\n      <DateTime>2014-02-16T18:40:54.937</DateTime>\r\n
+        \     <Description />\r\n      <Operation>Register</Operation>\r\n      <TransactionReconRef
+        />\r\n    </TransactionLogLine>\r\n  </History>\r\n  <ErrorLog />\r\n  <AuthenticationInformation
+        />\r\n  <AvtaleGiroInformation />\r\n  <Recurring>\r\n    <PanHash />\r\n
+        \   <ExpiryDate />\r\n    <Frequency />\r\n    <Type>Store (Init)</Type>\r\n
+        \ </Recurring>\r\n  <SecurityInformation>\r\n    <IPCountryMatchesIssuingCountry>true</IPCountryMatchesIssuingCountry>\r\n
+        \ </SecurityInformation>\r\n</PaymentInfo>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 17:40:57 GMT
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Query.aspx?merchantId=12001113&token=M!s8/b3Y&transactionId=2e5419ff9f66400586693f1276d37be7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 17:54:19 GMT
+      Content-Length:
+      - '966'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<PaymentInfo xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <MerchantId>12001113</MerchantId>\r\n
+        \ <QueryFinished>2014-02-16T18:54:18.9402692+01:00</QueryFinished>\r\n  <TransactionId>2e5419ff9f66400586693f1276d37be7</TransactionId>\r\n
+        \ <OrderInformation>\r\n    <Amount>100</Amount>\r\n    <Currency>NOK</Currency>\r\n
+        \   <OrderNumber>1</OrderNumber>\r\n    <OrderDescription>DESCRIPTION</OrderDescription>\r\n
+        \   <Fee>0</Fee>\r\n    <RoundingAmount>0</RoundingAmount>\r\n    <Total>100</Total>\r\n
+        \   <Timestamp>2014-02-16T18:54:15.77</Timestamp>\r\n  </OrderInformation>\r\n
+        \ <TerminalInformation>\r\n    <Browser />\r\n  </TerminalInformation>\r\n
+        \ <CustomerInformation>\r\n    <Email>customer@example.com</Email>\r\n    <PhoneNumber>12345678</PhoneNumber>\r\n
+        \   <CustomerNumber />\r\n    <FirstName />\r\n    <LastName />\r\n    <Address1
+        />\r\n    <Address2 />\r\n    <Postcode />\r\n    <Town />\r\n    <Country
+        />\r\n    <SocialSecurityNumber />\r\n    <CompanyName />\r\n    <CompanyRegistrationNumber
+        />\r\n  </CustomerInformation>\r\n  <Summary>\r\n    <AmountCaptured>0</AmountCaptured>\r\n
+        \   <AmountCredited>0</AmountCredited>\r\n    <Annulled>false</Annulled>\r\n
+        \   <Annuled>false</Annuled>\r\n    <Authorized>false</Authorized>\r\n  </Summary>\r\n
+        \ <CardInformation>\r\n    <MaskedPAN />\r\n    <PanHash />\r\n  </CardInformation>\r\n
+        \ <History>\r\n    <TransactionLogLine>\r\n      <DateTime>2014-02-16T18:54:15.77</DateTime>\r\n
+        \     <Description />\r\n      <Operation>Register</Operation>\r\n      <TransactionReconRef
+        />\r\n    </TransactionLogLine>\r\n  </History>\r\n  <ErrorLog />\r\n  <AuthenticationInformation
+        />\r\n  <AvtaleGiroInformation />\r\n  <Recurring>\r\n    <PanHash />\r\n
+        \   <ExpiryDate />\r\n    <Frequency />\r\n    <Type>Store (Init)</Type>\r\n
+        \ </Recurring>\r\n  <SecurityInformation>\r\n    <IPCountryMatchesIssuingCountry>true</IPCountryMatchesIssuingCountry>\r\n
+        \ </SecurityInformation>\r\n</PaymentInfo>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 17:54:19 GMT
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Query.aspx?merchantId=12001113&token=M!s8/b3Y&transactionId=175804d619564ca7b2a1b65c2b1a68c6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 17:56:40 GMT
+      Content-Length:
+      - '971'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<PaymentInfo xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <MerchantId>12001113</MerchantId>\r\n
+        \ <QueryFinished>2014-02-16T18:56:40.3290844+01:00</QueryFinished>\r\n  <TransactionId>175804d619564ca7b2a1b65c2b1a68c6</TransactionId>\r\n
+        \ <OrderInformation>\r\n    <Amount>100</Amount>\r\n    <Currency>NOK</Currency>\r\n
+        \   <OrderNumber>1</OrderNumber>\r\n    <OrderDescription>DESCRIPTION</OrderDescription>\r\n
+        \   <Fee>0</Fee>\r\n    <RoundingAmount>0</RoundingAmount>\r\n    <Total>100</Total>\r\n
+        \   <Timestamp>2014-02-16T18:56:38.267</Timestamp>\r\n  </OrderInformation>\r\n
+        \ <TerminalInformation>\r\n    <Browser />\r\n  </TerminalInformation>\r\n
+        \ <CustomerInformation>\r\n    <Email>customer@example.com</Email>\r\n    <PhoneNumber>12345678</PhoneNumber>\r\n
+        \   <CustomerNumber>1</CustomerNumber>\r\n    <FirstName />\r\n    <LastName
+        />\r\n    <Address1 />\r\n    <Address2 />\r\n    <Postcode />\r\n    <Town
+        />\r\n    <Country />\r\n    <SocialSecurityNumber />\r\n    <CompanyName
+        />\r\n    <CompanyRegistrationNumber />\r\n  </CustomerInformation>\r\n  <Summary>\r\n
+        \   <AmountCaptured>0</AmountCaptured>\r\n    <AmountCredited>0</AmountCredited>\r\n
+        \   <Annulled>false</Annulled>\r\n    <Annuled>false</Annuled>\r\n    <Authorized>false</Authorized>\r\n
+        \ </Summary>\r\n  <CardInformation>\r\n    <MaskedPAN />\r\n    <PanHash />\r\n
+        \ </CardInformation>\r\n  <History>\r\n    <TransactionLogLine>\r\n      <DateTime>2014-02-16T18:56:38.267</DateTime>\r\n
+        \     <Description />\r\n      <Operation>Register</Operation>\r\n      <TransactionReconRef
+        />\r\n    </TransactionLogLine>\r\n  </History>\r\n  <ErrorLog />\r\n  <AuthenticationInformation
+        />\r\n  <AvtaleGiroInformation />\r\n  <Recurring>\r\n    <PanHash />\r\n
+        \   <ExpiryDate />\r\n    <Frequency />\r\n    <Type>Store (Init)</Type>\r\n
+        \ </Recurring>\r\n  <SecurityInformation>\r\n    <IPCountryMatchesIssuingCountry>true</IPCountryMatchesIssuingCountry>\r\n
+        \ </SecurityInformation>\r\n</PaymentInfo>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 17:56:40 GMT
+- request:
+    method: get
+    uri: https://epayment-test.bbs.no/Netaxept/Query.aspx?merchantId=12001113&token=M!s8/b3Y&transactionId=0d54952d1b5847b9b7afd6858129981f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Feb 2014 18:02:50 GMT
+      Content-Length:
+      - '985'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<PaymentInfo xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <MerchantId>12001113</MerchantId>\r\n
+        \ <QueryFinished>2014-02-16T19:02:50.5257676+01:00</QueryFinished>\r\n  <TransactionId>0d54952d1b5847b9b7afd6858129981f</TransactionId>\r\n
+        \ <OrderInformation>\r\n    <Amount>100</Amount>\r\n    <Currency>NOK</Currency>\r\n
+        \   <OrderNumber>1</OrderNumber>\r\n    <OrderDescription>DESCRIPTION</OrderDescription>\r\n
+        \   <Fee>0</Fee>\r\n    <RoundingAmount>0</RoundingAmount>\r\n    <Total>100</Total>\r\n
+        \   <Timestamp>2014-02-16T19:02:48.48</Timestamp>\r\n  </OrderInformation>\r\n
+        \ <TerminalInformation>\r\n    <Browser />\r\n  </TerminalInformation>\r\n
+        \ <CustomerInformation>\r\n    <Email>customer@example.com</Email>\r\n    <PhoneNumber>12345678</PhoneNumber>\r\n
+        \   <CustomerNumber>1</CustomerNumber>\r\n    <FirstName>Peter</FirstName>\r\n
+        \   <LastName>Pan</LastName>\r\n    <Address1 />\r\n    <Address2 />\r\n    <Postcode
+        />\r\n    <Town />\r\n    <Country />\r\n    <SocialSecurityNumber />\r\n
+        \   <CompanyName />\r\n    <CompanyRegistrationNumber />\r\n  </CustomerInformation>\r\n
+        \ <Summary>\r\n    <AmountCaptured>0</AmountCaptured>\r\n    <AmountCredited>0</AmountCredited>\r\n
+        \   <Annulled>false</Annulled>\r\n    <Annuled>false</Annuled>\r\n    <Authorized>false</Authorized>\r\n
+        \ </Summary>\r\n  <CardInformation>\r\n    <MaskedPAN />\r\n    <PanHash />\r\n
+        \ </CardInformation>\r\n  <History>\r\n    <TransactionLogLine>\r\n      <DateTime>2014-02-16T19:02:48.48</DateTime>\r\n
+        \     <Description />\r\n      <Operation>Register</Operation>\r\n      <TransactionReconRef
+        />\r\n    </TransactionLogLine>\r\n  </History>\r\n  <ErrorLog />\r\n  <AuthenticationInformation
+        />\r\n  <AvtaleGiroInformation />\r\n  <Recurring>\r\n    <PanHash />\r\n
+        \   <ExpiryDate />\r\n    <Frequency />\r\n    <Type>Store (Init)</Type>\r\n
+        \ </Recurring>\r\n  <SecurityInformation>\r\n    <IPCountryMatchesIssuingCountry>true</IPCountryMatchesIssuingCountry>\r\n
+        \ </SecurityInformation>\r\n</PaymentInfo>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2014 18:02:50 GMT
+recorded_with: VCR 2.8.0
