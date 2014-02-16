@@ -1,5 +1,6 @@
 # Netaxept
 
+[![Build Status](https://travis-ci.org/pkordel/netaxept.png?branch=master)](https://travis-ci.org/pkordel/netaxept) 
 [![Code Climate](https://codeclimate.com/github/pkordel/netaxept.png)](https://codeclimate.com/github/pkordel/netaxept)
 
 This gem provides support for the Norwegian payment provider NetAxept.
