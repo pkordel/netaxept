@@ -11,7 +11,7 @@ module Netaxept
         err_class   = err_node.attr("xsi:type")
         err_message = err_node.xpath("//Message").text
         path = "#{Netaxept}::#{err_class}"
-        if RUBY_VERSION > '1.9'
+        if RUBY_VERSION >= '2.0'
           Object.const_get(path).new(err_message)
         else
           constantize(path).new(err_message)
