@@ -1,17 +1,13 @@
 language: ruby
 rvm:
-- 1.9.3
-- 2.0.0
-- 2.1.0
+  - 1.9.3
+  - 2.0.0
+  - 2.1.0
 env:
-  - TEST_SUITE=unit
-  - TEST_SUITE=integration
   global:
   - secure: IKVFLestMcshgIMvMZVsu7Jtii9zHFZeiX4tzjs0Q0l+NiYyR1KYp4JjoK0KfQA+Y+8Vhdz8wYslt8dB96cuyEztOjJhDzvT3yuSndCT64zU/tpWk+52KIa+wuCg8lbMaqisSQnYUeG2Zk8XNKZ4drgcqxcSoa2AjfFa2Fagm+4=
   - secure: Ak0bfMKJ4FPV6iFFzEit5MZ1KXv1GbNMrQfPbIyFRSJmI7KwHj39PgFSxcYZApyW1iMT70KAyftpyrCjPY7f5CFpqFjJeUmLz9Ggyui/AcQSjcYn9Ign2ZaPR3PvLsIYz3zyxee/gQa8/lS1tkZrHfF+TwIA/2bYd+V46IU/uFU=
   - secure: Z2ve3VnbEHJZv82shhEJh+AcNpgcVUlLcZHX5UkpBznABeEFy3n0w+Tk1bx2TLL9EEoFw70tzD/3/SLh7HeF33O7TChhKv7ClluuwRu3QiONLPtVb1kuJ4kU3dmE/fsxOLfV6qLif/vZI8EIcWcj0WhGaWbTlMiwjUEwoVBzqk8=
   - secure: PLtLn4DkOeR8/pKPQKj74/RpGbZqj27Kn3lzZDEYMg5gT6aYjeK7POcCD1W9oN5fX+80Ln/DdkytL3vpH+9Enx4BoY89YQppwcm2HAzkqFFJKvenhe6TfA1QZ/kz4BuBzz6bY+CGYBkc7S+JV0GeX17nAGCrNdW67gOvsY3+3I0=
-
-script: "bundle exec rake test:$TEST_SUITE"
 
 bundler_args: --without non_essential
